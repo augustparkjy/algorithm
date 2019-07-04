@@ -25,7 +25,6 @@ int count(char b[][51], int n, int i, int j, int x)
 		}
 		if(c>x)
 			x=c;
-		cout << "x: " << x << ' ' << "c: " << c << '\n';
 	}
 	
 	for(int p=j ; p<j+2 ;p++)
@@ -48,7 +47,6 @@ int count(char b[][51], int n, int i, int j, int x)
 		}
 		if(c>x)
 			x=c;
-		cout << "x: " << x << ' ' << "c: " << c << '\n';
 	}
 
 	return x;	
@@ -90,13 +88,6 @@ int main()
 					b[i][j] = t2;
 					b[i][j+1] = t1;
 					
-					for(int p=0 ; p<n ; p++){
-						for(int q=0 ; q<n ; q++)
-							cout << b[p][q];
-						cout<<'\n';}
-					
-					cout<<'\n';
-					
 					x=count(b, n, i, j, x);		
 					
 					b[i][j] = t1;
@@ -113,13 +104,6 @@ int main()
 					
 					b[i][j] = t2;
 					b[i+1][j] = t1;
-					
-					for(int p=0 ; p<n ; p++){
-						for(int q=0 ; q<n ; q++)
-							cout << b[p][q];
-						cout<<'\n';}
-					
-					cout<<'\n';
 					
 					x=count(b, n, i, j, x);					
 

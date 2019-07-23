@@ -56,10 +56,10 @@ int main ()
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	
-	int N, M, start;
-	int i, x, y;
+	int N, M, start; //N: # of Nodes, M: # of edges, start: start node 
+	int i, x, y; 
 	
-	cin >> N >> M>> start;
+	cin >> N >> M >> start;
 		
 	for(int i=0 ; i<M ; i++)
 	{
@@ -70,7 +70,7 @@ int main ()
 	
 	DFS(start, N);
 	cout << '\n';
-	BFS(start, N);
+//	BFS(start, N);
 	
 	return 0;
 

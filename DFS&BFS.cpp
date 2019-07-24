@@ -70,7 +70,7 @@ int main ()
 	
 	DFS(start, N);
 	cout << '\n';
-//	BFS(start, N);
+	BFS(start, N);
 	
 	return 0;
 

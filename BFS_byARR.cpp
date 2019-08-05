@@ -22,7 +22,7 @@ void BFS(int v, int n)
 				cout << i << ' ';
 				queue[rear++]=i;
 				if(rear == n) //모든 노드의 탐색 마침을 의미(하나의 컴포넌트인 그래프  가정) 
-					return;
+					return; // 넣으면서 탐색했음을 알려주므로 rear==n이면 끝냄 
 				visit[i] = 1;
 			}	
 		}

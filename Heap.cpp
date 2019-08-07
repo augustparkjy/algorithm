@@ -1,11 +1,11 @@
 #include <iostream>
-#define MAX 50+1
+#define MAX 50
 using namespace std;
 
 class Heap
 {
 public:
-	int heap[MAX]={0};
+	int heap[MAX+1]={0};
 	int cnt;
 
 	Heap():cnt(0){}

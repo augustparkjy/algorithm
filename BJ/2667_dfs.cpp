@@ -34,13 +34,9 @@ int main()
 		
 	for(int i=1 ; i<=n ; i++)
 		for(int j=1 ; j<=n ; j++)
-		{
 			if(m[i][j]=='1')
-			{
 				c++;
 				homes[k++]=func(n, i, j, 0);
-			}
-		}
 	
 	sort(homes, homes+k);
 	

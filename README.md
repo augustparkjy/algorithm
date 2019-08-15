@@ -11,4 +11,4 @@ bs : binary search
 list
  - array
  - linked list
- 
+induction : 귀낙적 추론 

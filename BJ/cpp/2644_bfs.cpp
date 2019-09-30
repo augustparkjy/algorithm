@@ -12,13 +12,13 @@ int BFS(int v, int t, int n, int g[][101], int visit[101])
 	
 	while(cnt) //cnt가 0이라는 것은 컴포넌트 내 모든 노드를 탐색했다는 것. 
 	{
-		chon++;
-		for(int j=cnt ; j>0 ; j--)
+		chon++; //트리 레벨
+		for(int j=cnt ; j>0 ; j--) //A점과 연결된 들릴 곳 개수 cnt 만큼은 다 돈다 즉, 같은 레벨에 있는 점을 들릴 때는 chon 추가 안하기 위함
 		{
 			pop = q[f++];
 			for(int i=1 ; i<=n ; i++)
 			{
-				if(g[pop][i] && !visit[i])
+				if(g[pop][i] && !visit[i]) //pop된 점에 연결된 모든 점 확인하고 들리지 않은 곳이 있으면 nodes증가(다음 레벨에 연결된 점의 개수)
 				{
 					if(i==t)
 						return chon;
